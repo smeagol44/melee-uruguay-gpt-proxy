@@ -88,6 +88,7 @@ module.exports = async function handler(req, res) {
   } catch (err) {
     console.error("eventStandings error:", err);
     return res.status(500).json({
+      console.log("TOKEN EXISTS:", !!STARTGG_TOKEN);
       error: "Failed to fetch standings",
       details: err.message,
     });
