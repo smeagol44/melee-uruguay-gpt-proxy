@@ -1,0 +1,51 @@
+{
+  "year": 2018,
+  "tournaments": [
+    {
+      "name": "MMM 2018 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-1/details"
+    },
+    {
+      "name": "MMM 2018 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-2/details"
+    },
+    {
+      "name": "MMM 2018 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-3/details"
+    },
+    {
+      "name": "MMM 2018 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-4/details"
+    },
+    {
+      "name": "MMM 2018 #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-6/details"
+    },
+    {
+      "name": "MMM 2018 #7",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-7",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-7/details"
+    },
+    {
+      "name": "MMM 2018 #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-8/details"
+    },
+    {
+      "name": "MMM 2018 #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-9/details"
+    },
+    {
+      "name": "MMM 2018 #10",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2018-10",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2018-10/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

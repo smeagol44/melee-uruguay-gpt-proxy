@@ -1,0 +1,36 @@
+{
+  "year": 2021,
+  "tournaments": [
+    {
+      "name": "MMM 2021 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-1/details"
+    },
+    {
+      "name": "MMM 2021 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-2/details"
+    },
+    {
+      "name": "MMM 2021 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-3/details"
+    },
+    {
+      "name": "MMM 2021 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-4/details"
+    },
+    {
+      "name": "MMM 2021 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-5",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-5/details"
+    },
+    {
+      "name": "MMM 2021 #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2021-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2021-6/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

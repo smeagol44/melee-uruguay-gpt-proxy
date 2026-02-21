@@ -1,0 +1,51 @@
+{
+  "year": 2023,
+  "tournaments": [
+    {
+      "name": "MMM Revival #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-2/details"
+    },
+    {
+      "name": "MMM Revival #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-3-23",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-3-23/details"
+    },
+    {
+      "name": "MMM Revival #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-4/details"
+    },
+    {
+      "name": "MMM Revival #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-5-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-5-1/details"
+    },
+    {
+      "name": "MMM Revival #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-6/details"
+    },
+    {
+      "name": "MMM Revival #7",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-7",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-7/details"
+    },
+    {
+      "name": "MMM Revival #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-8/details"
+    },
+    {
+      "name": "MMM Revival #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-9/details"
+    },
+    {
+      "name": "MMM Revival #10",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-revival-10",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-revival-10/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

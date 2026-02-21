@@ -1,0 +1,61 @@
+{
+  "year": 2019,
+  "tournaments": [
+    {
+      "name": "MMM 2019 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-1/details"
+    },
+    {
+      "name": "MMM 2019 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-2/details"
+    },
+    {
+      "name": "MMM 2019 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-3-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-3-1/details"
+    },
+    {
+      "name": "MMM 2019 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-4/details"
+    },
+    {
+      "name": "MMM 2019 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-5",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-5/details"
+    },
+    {
+      "name": "MMM 2019 #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-6/details"
+    },
+    {
+      "name": "MMM 2019 #7",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-7",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-7/details"
+    },
+    {
+      "name": "MMM 2019 #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-8/details"
+    },
+    {
+      "name": "MMM 2019 #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-9/details"
+    },
+    {
+      "name": "MMM 2019 #10",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-10",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-10/details"
+    },
+    {
+      "name": "MMM 2019 #11",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2019-11",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2019-11/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

@@ -1,0 +1,31 @@
+{
+  "year": 2025,
+  "tournaments": [
+    {
+      "name": "MMM 2025 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2025-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2025-1/details"
+    },
+    {
+      "name": "MMM 2025 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2025-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2025-2/details"
+    },
+    {
+      "name": "MMM 2025 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2025-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2025-3/details"
+    },
+    {
+      "name": "MMM 2025 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2025-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2025-4/details"
+    },
+    {
+      "name": "MMM 2025 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2025-5",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2025-5/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

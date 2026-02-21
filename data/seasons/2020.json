@@ -1,0 +1,56 @@
+{
+  "year": 2020,
+  "tournaments": [
+    {
+      "name": "MMM 2020 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-1-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-1-1/details"
+    },
+    {
+      "name": "MMM 2020 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-2/details"
+    },
+    {
+      "name": "MMM 2020 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-3/details"
+    },
+    {
+      "name": "MMM 2020 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-4/details"
+    },
+    {
+      "name": "MMM 2020 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-5",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-5/details"
+    },
+    {
+      "name": "MMM 2020 #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-6/details"
+    },
+    {
+      "name": "MMM 2020 #7",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-7",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-7/details"
+    },
+    {
+      "name": "MMM 2020 #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-8/details"
+    },
+    {
+      "name": "MMM 2020 #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-9/details"
+    },
+    {
+      "name": "MMM 2020 #10",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2020-10",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2020-10/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

@@ -1,0 +1,51 @@
+{
+  "year": 2024,
+  "tournaments": [
+    {
+      "name": "MMM 2024 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-1/details"
+    },
+    {
+      "name": "MMM 2024 #2",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-2",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-2/details"
+    },
+    {
+      "name": "MMM 2024 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-3/details"
+    },
+    {
+      "name": "MMM 2024 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-4/details"
+    },
+    {
+      "name": "MMM 2024 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-5-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-5-1/details"
+    },
+    {
+      "name": "MMM 2024 #6",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-6",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-6/details"
+    },
+    {
+      "name": "MMM 2024 #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-8/details"
+    },
+    {
+      "name": "MMM 2024 #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-9/details"
+    },
+    {
+      "name": "MMM 2024 #10",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2024-10",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2024-10/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}

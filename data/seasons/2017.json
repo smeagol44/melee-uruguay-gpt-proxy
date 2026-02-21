@@ -1,0 +1,41 @@
+{
+  "year": 2017,
+  "tournaments": [
+    {
+      "name": "MMM 2017 #3",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-3",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-3/details"
+    },
+    {
+      "name": "MMM 2017 #4",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-4",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-4/details"
+    },
+    {
+      "name": "MMM 2017 #5",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-5",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-5/details"
+    },
+    {
+      "name": "MMM 2017 #7",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-7",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-7/details"
+    },
+    {
+      "name": "MMM 2017 #8",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-8",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-8/details"
+    },
+    {
+      "name": "MMM 2017 #9",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-9",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-9/details"
+    },
+    {
+      "name": "MMM 2017 #11",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2017-11",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2017-11/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}
