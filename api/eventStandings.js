@@ -1,7 +1,7 @@
 const STARTGG_ENDPOINT = "https://api.start.gg/gql/alpha";
 
 module.exports = async function handler(req, res) {
-  const STARTGG_TOKEN = process.env.STARTGG_API_TOKEN;
+  const STARTGG_TOKEN = process.env.STARTGG_API_KEY;
   const { eventSlug, top = 8, debug } = req.query;
 
   if (!eventSlug) return res.status(400).json({ error: "Missing eventSlug" });
