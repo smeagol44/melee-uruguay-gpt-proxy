@@ -94,7 +94,18 @@ module.exports = async function handler(req, res) {
       }
     }
 
-    return res.status(200).json({ attended, placement });
+    if (req.query.debug === "1") {
+      return res.status(200).json({
+        attended,
+        placement,
+        debug: {
+          searchedTag: playerTag,
+          entrantId
+        }
+      });
+    }
+
+return res.status(200).json({ attended, placement });
   } catch (err) {
     return res.status(500).json({
       error: "attendance failed",
