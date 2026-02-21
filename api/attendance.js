@@ -37,11 +37,9 @@ module.exports = async function handler(req, res) {
 
   const entrants = data?.data?.event?.entrants?.nodes || []
 
-  const found = entrants.find(e =>
-    e.participants.some(p =>
-      p.gamerTag.toLowerCase() === playerTag.toLowerCase()
-    )
-  )
+const found = entrants.find(e =>
+  e.name.toLowerCase() === playerTag.toLowerCase()
+)
 
   res.status(200).json({
     attended: !!found,
