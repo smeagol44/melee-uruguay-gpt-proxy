@@ -1,0 +1,11 @@
+{
+  "year": 2026,
+  "tournaments": [
+    {
+      "name": "MMM 2026 #1",
+      "tournamentSlug": "tournament/montevideo-melee-monthly-2026-1",
+      "sourceUrl": "https://www.start.gg/tournament/montevideo-melee-monthly-2026-1/details"
+    }
+  ],
+  "filter": "Only tournaments whose name starts with 'MMM' from the provided spreadsheet."
+}
