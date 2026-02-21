@@ -7,17 +7,21 @@ module.exports = async function handler(req, res) {
   const { eventSlug, playerTag } = req.body
 
   const query = `
-  query CheckAttendance($slug: String!) {
-    event(slug: $slug) {
-      entrants(query: { perPage: 500 }) {
-        nodes {
-          name
-          placement
+    query CheckAttendance($slug: String!) {
+      event(slug: $slug) {
+        standings(query: { perPage: 500 }) {
+          nodes {
+            placement
+            entrant {
+              participants {
+                gamerTag
+              }
+            }
+          }
         }
       }
     }
-  }
-`
+  `
 
   const response = await fetch('https://api.start.gg/gql/alpha', {
     method: 'POST',
@@ -33,10 +37,12 @@ module.exports = async function handler(req, res) {
 
   const data = await response.json()
 
-  const entrants = data?.data?.event?.entrants?.nodes || []
+  const entrants = data?.data?.event?.standings?.nodes || []
 
 const found = entrants.find(e =>
-  e.name.toLowerCase() === playerTag.toLowerCase()
+  e.entrant.participants.some(p =>
+    p.gamerTag.toLowerCase() === playerTag.toLowerCase()
+  )
 )
 
   res.status(200).json({
