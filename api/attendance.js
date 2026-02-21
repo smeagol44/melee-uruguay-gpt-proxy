@@ -1,10 +1,17 @@
-export default async function handler(req, res) {
+export const config = {
+  runtime: 'edge'
+}
 
-  if (req.method !== 'POST') {
-    return res.status(405).json({ error: 'Method not allowed' })
+export default async function handler(request) {
+
+  if (request.method !== 'POST') {
+    return new Response(
+      JSON.stringify({ error: 'Method not allowed' }),
+      { status: 405 }
+    )
   }
 
-  const { eventSlug, playerTag } = req.body
+  const { eventSlug, playerTag } = await request.json()
 
   const query = `
     query CheckAttendance($slug: String!) {
@@ -43,8 +50,11 @@ export default async function handler(req, res) {
     )
   )
 
-  return res.status(200).json({
-    attended: !!found,
-    placement: found?.placement || null
-  })
+  return new Response(
+    JSON.stringify({
+      attended: !!found,
+      placement: found?.placement || null
+    }),
+    { status: 200 }
+  )
 }
