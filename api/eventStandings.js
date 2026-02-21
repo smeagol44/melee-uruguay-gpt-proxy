@@ -1,7 +1,7 @@
-export default async function handler(req, res) {
-  const STARTGG_ENDPOINT = "https://api.start.gg/gql/alpha";
-  const STARTGG_TOKEN = process.env.STARTGG_API_TOKEN;
+const STARTGG_ENDPOINT = "https://api.start.gg/gql/alpha";
 
+module.exports = async function handler(req, res) {
+  const STARTGG_TOKEN = process.env.STARTGG_API_TOKEN;
   const { eventSlug, top = 8 } = req.query;
 
   if (!eventSlug) {
@@ -33,7 +33,7 @@ export default async function handler(req, res) {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: \`Bearer ${STARTGG_TOKEN}\`,
+        Authorization: `Bearer ${STARTGG_TOKEN}`,
       },
       body: JSON.stringify({
         query,
@@ -92,4 +92,4 @@ export default async function handler(req, res) {
       details: err.message,
     });
   }
-}
+};
