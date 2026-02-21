@@ -6,13 +6,38 @@ const path = require("path");
 const MELEE_VIDEOGAME_ID = 1;
 
 function pickMeleeEvents(events) {
-  const melee = (events || []).filter((e) => {
+  const meleeSingles = (events || []).filter((e) => {
     const vg = e.videogame;
     const id = vg && vg.id != null ? Number(vg.id) : null;
-    return id === MELEE_VIDEOGAME_ID;
+    if (id !== MELEE_VIDEOGAME_ID) return false;
+
+    const name = (e.name || "").toLowerCase();
+    const slug = (e.slug || "").toLowerCase();
+
+    const isSingles =
+      name.includes("singles") ||
+      slug.includes("singles") ||
+      name === "super smash bros. melee" ||
+      slug === "super-smash-bros-melee";
+
+    const isDoubles =
+      name.includes("doubles") ||
+      slug.includes("doubles") ||
+      name.includes("teams") ||
+      slug.includes("teams");
+
+    const isSide =
+      name.includes("amateur") ||
+      slug.includes("amateur") ||
+      name.includes("ladder") ||
+      slug.includes("ladder") ||
+      name.includes("redemption") ||
+      slug.includes("redemption");
+
+    return isSingles && !isDoubles && !isSide;
   });
 
-  return melee;
+  return meleeSingles;
 }
 
 async function gql(query, variables) {
