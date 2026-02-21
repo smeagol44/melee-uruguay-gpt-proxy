@@ -5,27 +5,14 @@ const path = require("path");
 // Source/example lists Melee -> 1. https://github.com/HDR-Development/StartGGActionsHDR
 const MELEE_VIDEOGAME_ID = 1;
 
-function pickMeleeEvent(events) {
-  // Prefer Singles-like events, avoid Doubles/Teams.
-  const score = (e) => {
-    const name = (e.name || "").toLowerCase();
-    const slug = (e.slug || "").toLowerCase();
-    let s = 0;
-    if (name.includes("singles") || slug.includes("singles")) s += 5;
-    if (name.includes("melee") || slug.includes("melee")) s += 2;
-    if (name.includes("doubles") || slug.includes("doubles") || name.includes("teams") || slug.includes("teams")) s -= 5;
-    return s;
-  };
-
+function pickMeleeEvents(events) {
   const melee = (events || []).filter((e) => {
     const vg = e.videogame;
     const id = vg && vg.id != null ? Number(vg.id) : null;
     return id === MELEE_VIDEOGAME_ID;
   });
 
-  if (!melee.length) return null;
-  melee.sort((a, b) => score(b) - score(a));
-  return melee[0];
+  return melee;
 }
 
 async function gql(query, variables) {
@@ -103,25 +90,27 @@ module.exports = async function handler(req, res) {
       const tourney = out && out.data && out.data.tournament ? out.data.tournament : null;
       const events = tourney ? tourney.events : null;
 
-      const meleeEvent = pickMeleeEvent(events);
+      const meleeEvents = pickMeleeEvents(events);
 
-      if (!meleeEvent) {
-        unresolved.push({ ...t, reason: "No Melee event found in tournament" });
-        continue;
-      }
+      if (!meleeEvents.length) {
+  unresolved.push({ ...t, reason: "No Melee event found in tournament" });
+  continue;
+}
 
-      const eventSlugRaw = String(meleeEvent.slug || "");
-      const eventSlug =
-        eventSlugRaw.startsWith("tournament/")
-          ? eventSlugRaw
-          : `tournament/${tourneySlug}/event/${eventSlugRaw}`;
+for (const ev of meleeEvents) {
+  const eventSlugRaw = String(ev.slug || "");
+  const eventSlug =
+    eventSlugRaw.startsWith("tournament/")
+      ? eventSlugRaw
+      : `tournament/${tourneySlug}/event/${eventSlugRaw}`;
 
-      resolved.push({
-        name: t.name,
-        tournamentSlug: `tournament/${tourneySlug}`,
-        sourceUrl: t.sourceUrl,
-        eventSlug,
-      });
+  resolved.push({
+    name: t.name,
+    tournamentSlug: `tournament/${tourneySlug}`,
+    sourceUrl: t.sourceUrl,
+    eventSlug,
+  });
+}
     } catch (err) {
       unresolved.push({ ...t, reason: "Exception resolving tournament events", detail: String(err && err.message ? err.message : err) });
     }
