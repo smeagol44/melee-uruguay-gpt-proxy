@@ -7,19 +7,17 @@ module.exports = async function handler(req, res) {
   const { eventSlug, playerTag } = req.body
 
   const query = `
-    query CheckAttendance($slug: String!) {
-      event(slug: $slug) {
-        entrants(query: { perPage: 500 }) {
-          nodes {
-            participants {
-              gamerTag
-            }
-            placement
-          }
+  query CheckAttendance($slug: String!) {
+    event(slug: $slug) {
+      entrants(query: { perPage: 500 }) {
+        nodes {
+          name
+          placement
         }
       }
     }
-  `
+  }
+`
 
   const response = await fetch('https://api.start.gg/gql/alpha', {
     method: 'POST',
